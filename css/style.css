@@ -221,6 +221,10 @@ textarea {
   z-index: 5;
 }
 
+#cookieJar {
+  position: absolute;
+}
+
 #cookieJar.hide {
   opacity: 0;
   pointer-events: none;
