@@ -30,10 +30,12 @@ rejectBtn.onclick = () => {
 };
 
 let checkCookie = document.cookie.indexOf("CookieBy=GeeksForGeeks");
-checkCookie !== -1 ?
-  ? consentBox.classList.add("hide")
-  :
-    consentBox.classList.remove("hide");
+if (checkCookie === -1) {
+  consentBox.classList.remove("hide");
+} else {
+  consentBox.classList.add("hide");
+}
+
 
 //
 const learnMore = document.getElementById("learnMoreHmm");
