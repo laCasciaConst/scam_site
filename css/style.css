@@ -968,9 +968,14 @@ a.btn:hover {
 }
 
 /*----end footer content----*/
-@media (pointer: coarse) {
+@media screen and (max-width: 720px) {
+body {
+  width: 450px;
+  overflow-x: hidden;
+}
+
   .top_banner {
-    width: 100%;
+    width: 420px;
   }
 
   #header {
@@ -1000,6 +1005,10 @@ a.btn:hover {
     }
   }
 
+  .col {
+    width: 420px;
+  }
+
   .antiAdblock {
     .popup1 {
       font-size: 12px;
@@ -1009,6 +1018,10 @@ a.btn:hover {
     .popup {
       width: 95%;
     }
+  }
+
+  .column_two {
+    visibility: hidden;
   }
 
   #consentContent p {
@@ -1046,7 +1059,7 @@ a.btn:hover {
     width: 100%;
     left: 0;
     text-align: center;
-    top: 200px;
+    top: 400px;
 
     #consentHeader {
       font-size: 21px;
@@ -1055,6 +1068,11 @@ a.btn:hover {
     .ribbon {
       width: 15%;
     }
+  }
+
+  #consentContent p {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .consentButton,
