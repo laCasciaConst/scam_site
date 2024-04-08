@@ -968,7 +968,7 @@ a.btn:hover {
 }
 
 /*----end footer content----*/
-@media only screen and (max-width: 700px), (min-width: 360px) {
+@media (pointer: coarse) {
   .top_banner {
     width: 100%;
   }
