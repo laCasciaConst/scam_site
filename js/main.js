@@ -30,10 +30,9 @@ rejectBtn.onclick = () => {
 };
 
 let checkCookie = document.cookie.indexOf("CookieBy=GeeksForGeeks");
-checkCookie !== 0
+checkCookie !== -1 ?
   ? consentBox.classList.add("hide")
-  : // checkCookie !== -1 ? 이어야하는데 0으로 바꿔서 의미없게 만듦,
-    // 리셋할때마다 매번 창이 떠
+  :
     consentBox.classList.remove("hide");
 
 //
